@@ -12,11 +12,11 @@ function App() {
   return (
     <div className="">
       <header className ="sticky top-0 bg-white shadow-md">
-        <div className='container mx-auto flex items-center justify-between px-4 py-2'>
-          <a href="/" className='flex items-center space-x-2'>
-            <img src="src/assets/logo.png" alt="Logo" className="h-6 w-6 text-orange-500" />
+        <div className='container mx-auto flex flex-row flex-nowrap items-center justify-start px-4 py-2 space-x-6'>
+          <a href="/" className='flex items-center space-x-2 flex-shrink-0'>
+            <img src="src/assets/logo.png" alt="Logo" className="header-logo object-contain text-orange-500" />
           </a>
-          <nav className='hidden md:flex md:space-x-8'>
+          <nav className='flex flex-row flex-nowrap items-center space-x-8'>
             {navLinks.map((link)=>(
               <a 
               key={link.name}
