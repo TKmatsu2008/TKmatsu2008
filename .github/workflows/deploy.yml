@@ -1,0 +1,49 @@
+name: Deploy to GitHub Pages
+
+# どのイベントでワークフローを起動するか
+on:
+  push:
+    # mainブランチにプッシュされたときに起動
+    branches:
+      - main
+  # GitHub ActionsのActionsタブから手動で実行できるようにする
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    # 実行する環境
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. コードをチェックアウトする
+    - name: Checkout Code
+      uses: actions/checkout@v4
+      with:
+        # デプロイに必要なので履歴をすべて取得
+        fetch-depth: 0
+
+    # 2. Node.js環境を設定する
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20' # 使用するNode.jsのバージョン
+
+    # 3. 依存パッケージをインストールする
+    - name: Install dependencies
+      run: npm install
+
+    # 4. プロジェクトをビルドする
+    - name: Build project
+      run: npm run build
+
+    # 5. GitHub Pagesにデプロイする
+    # peaceiris/actions-gh-pages は、gh-pagesブランチへのデプロイを専門に行うAction
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        # デプロイに使用するトークン
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        # デプロイ元のディレクトリ（Viteのビルド成果物フォルダ）
+        publish_dir: ./dist
+        # gh-pagesブランチにデプロイする
+        publish_branch: gh-pages
