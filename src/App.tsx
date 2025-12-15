@@ -39,7 +39,7 @@ function App() {
               <a 
               key={link.name}
               href={link.href}
-              className='text-gray-600 hover:text-orange-600 font-medium transition duration-150 ease-in-out'>
+              className='!text-gray-600 hover:text-orange-600 font-medium transition duration-150 ease-in-out'>
                 {link.name}
               </a>
             ))}
@@ -66,7 +66,7 @@ function App() {
           </p>
         </section>
 
-        <section id='project' className='w-full max-w-full md:max-w-7xl md:mx-auto mx-auto min-h-screen md:pt-[10hv]'>
+        <section id='project' className='w-full max-w-full md:max-w-7xl md:mx-auto mx-auto min-h-screen pt-20'>
           <h1 className='text-gray-600 leading-relaxed'>
             Project
           </h1>
@@ -98,7 +98,7 @@ function App() {
           </div>
         </section>
 
-        <section id='research' className='min-h-screen'>
+        <section id='research' className='min-h-screen pt-20'>
           <h1 className='text-gray-600 leading-relaxed'>
             Research
           </h1>
@@ -130,7 +130,7 @@ function App() {
           </div>
         </section>
 
-        <section id='others' className='w-full max-w-full md:max-w-7xl md:mx-auto mx-auto min-h-screen md:pt-[10hv]'>
+        <section id='others' className='w-full max-w-full md:max-w-7xl md:mx-auto mx-auto min-h-screen pt-20'>
           <h1 className='text-gray-600 leading-relaxed'>
             Others
           </h1>
@@ -139,12 +139,19 @@ function App() {
               <h2>
                 awards
               </h2>
+              <p>
+                2025年7月 可視化情報学会アートコンテスト - 入賞
+                <br />
+                東京メトロの路線ネットワーク図
+
+              </p>
             </div>
 
             <div className='w-1/2 pl-4'>
               <h2>
                 skills
               </h2>
+              <p>javascript, python, swiftUI</p>
             </div>
           </div>
         </section>
