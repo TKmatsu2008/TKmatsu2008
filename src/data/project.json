@@ -1,0 +1,70 @@
+[
+  {
+    "id": "navitime-intern",
+    "name": "NAVITIME「渋滞情報マップ」機能開発",
+    "category": "アプリ開発 / 現場インターンシップ / チーム開発",
+    "duration": "約2週間（2024年9月）",
+    "image": "src/assets/trafficJamInfo.png",
+    "details": {
+      "title": "NAVITIME「渋滞情報マップ」機能開発（現場配属インターン）",
+      "summary": "現場配属インターンシップとして、現在運用中の大規模なiOSアプリに新機能の設計・開発・統合を担当。",
+      "role": "現場開発担当（設計・開発・デザインの一部）",
+      "technology": "SwiftUI, NAVITIME Japan 社内API",
+      "product_type": "iOSアプリ（渋滞情報マップ）",
+      "features": [
+        "高速道路IC出入り口入力時の付近IC候補表示機能の実装。",
+        "高速道路の定点カメラブックマーク機能の追加。"
+      ],
+      "contributions": [
+        "運用中の大規模コードベースの構造を理解し、新機能をバグなく統合。",
+        "デザイナーとの連携のもと、機能の設計からデザイン、実装まで一連のプロセスを担当し、リリースへの貢献を経験。"
+      ]
+    }
+  },
+  {
+    "id": "tsukutopi-quiz",
+    "name": "Face Graph / AI Quizサーキュレーター",
+    "category": "Web開発 / 初のハッカソン参加作品 / チーム開発",
+    "duration": "通年(2023年)",
+    "github": "https://github.com/MiyamotoRin/FaceGraph-Flask",
+    "image": "src/assets/faceGraph.png",
+    "details": {
+      "title": "Face Graph / AI Quizサーキュレーター（Web UI開発）",
+      "summary": "Web開発の基礎学習を目的とした初期プロジェクト。主にHTMLとJavaScriptを用いたユーザーインターフェースの構築を担当。",
+      "role": "UI開発担当",
+      "technology": "HTML, JavaScript, CSS",
+      "product_type": "Webアプリケーション",
+      "features": [
+        "プロダクトの核となるユーザーインターフェース（UI）の実装。",
+        "JavaScriptを用いた動的な要素の動作確認と統合。"
+      ],
+      "contributions": [
+        "アジャイル開発を実践で利用。",
+        "初めてのプロジェクトとして、要件に基づいた機能実装を完遂。"
+      ]
+    }
+  },
+    {
+    "id": "tokyo-metro-vis",
+    "name": "東京メトロ 移動リズムの可視化",
+    "category": "データ可視化 / 学会コンテスト参加作品 / チーム開発",
+    "duration": "2025年4~5月",
+    "github": "https://github.com/TKmatsu2008/JapanVis2025Contest",
+    "image": "src/assets/tokyoMetro.png",
+    "details": {
+      "title": "東京メトロ 移動リズムの可視化",
+      "summary": "東京メトロ・都営地下鉄の移動時間、運行頻度、利用者数などのデータを、D3.jsを用いてインタラクティブなネットワーク図として可視化。",
+      "role": "可視化制作担当（フロントエンド、データ処理）",
+      "technology": "D3.js, JSON, 交通オープンデータセンターAPI",
+      "product_type": "Webアプリケーション（データ可視化）",
+      "features": [
+        "D3.jsを用いたネットワーク図のモーフィング機能実装。",
+        "地図上への可視化レイヤー作成（駅をノード、駅間をエッジとして表現）。"
+      ],
+      "contributions": [
+        "データ可視化技術（D3.js）を用いた複雑なネットワークグラフ表現を習得。",
+        "APIから取得した交通データを、可視化に適したノード/エッジ仕様のJSON形式に整形するデータパイプラインを構築。"
+      ]
+    }
+  }
+]

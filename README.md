@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React, TypeScript, Tailwind CSSを使用して構築された個人のポートフォリオサイトです。プロフィール、プロジェクト、研究成果などを掲載しています。
 
-Currently, two official plugins are available:
+## 🚀 使用技術
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **フレームワーク:** [React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+- **ビルドツール:** [Vite](https://vitejs.dev/)
+- **スタイリング:** [Tailwind CSS](https://tailwindcss.com/)
+- **UIコンポーネント:** [shadcn/ui](https://ui.shadcn.com/)
+- **アイコン:** [Lucide React](https://lucide.dev/)
+- **デプロイ:** GitHub Pages (GitHub Actions)
 
-## React Compiler
+## ✨ 機能
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Profile:** 自己紹介と経歴。
+- **Project:** 開発プロジェクトの紹介（モーダル表示で詳細を確認可能）。
+- **Research:** 研究内容や成果の紹介。
+- **Others:** 受賞歴やスキルセット。
+- **Contact:** GitHub, Email, Wantedlyへのリンク。
+- **レスポンシブデザイン:** PCおよびモバイルデバイスに対応。
 
-## Expanding the ESLint configuration
+## 🛠️ 開発環境のセットアップ
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 前提条件
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js (v20以上推奨)
+- npm
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### インストール
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. リポジトリをクローンします:
+   ```bash
+   git clone https://github.com/TKmatsu2008/TKmatsu2008.git
+   cd TKmatsu2008
+   ```
+
+2. 依存関係をインストールします:
+   ```bash
+   npm install
+   ```
+
+### ローカルでの実行
+
+開発サーバーを起動します:
+
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+ブラウザで http://localhost:5173 を開いて確認してください。
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🌍 デプロイ
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+このプロジェクトは GitHub Actions を使用して GitHub Pages に自動デプロイされるように設定されています。
+`main` ブランチにプッシュすると、`.github/workflows/deploy.yml` で定義されたワークフローが実行されます。
