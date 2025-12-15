@@ -1,4 +1,5 @@
 import './App.css'
+import logo from './assets/logo.png'
 import {
   Card,
   CardAction,
@@ -8,6 +9,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 
 function App() {
   const navLinks = [
@@ -57,35 +66,87 @@ function App() {
           </p>
         </section>
 
-        <section id='project' className='w-full max-w-full md:max-w-7xl md:mx-auto mx-auto min-h-screen'>
+        <section id='project' className='w-full max-w-full md:max-w-7xl md:mx-auto mx-auto min-h-screen md:pt-[10hv]'>
           <h1 className='text-gray-600 leading-relaxed'>
             Project
           </h1>
-          <Card className="border border-gray-300 shadow-lg bg-white">
-            <CardHeader>
-              <CardTitle>Card Title</CardTitle>
-              <CardDescription>Card Description</CardDescription>
-              <CardAction>Card Action</CardAction>
-            </CardHeader>
-            <CardContent>
-              <p>Card Content</p>
-            </CardContent>
-            <CardFooter>
-              <p>Card Footer</p>
-            </CardFooter>
-          </Card>
+          
+          <div className="flex flex-wrap justify-center gap-6">
+            {[...Array(5)].map((_, index) => (
+              <Dialog key={index}>
+                <DialogTrigger asChild>
+                  <Card className="w-[350px] border border-gray-300 shadow-lg bg-white cursor-pointer overflow-hidden p-0">
+                    <CardContent className="p-0">
+                      <img src={logo} alt="Project" className="w-full h-[200px] object-cover" />
+                      <div className="p-3">
+                        <p>Card Content</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </DialogTrigger>
+                <DialogContent className="min-w-[90vw] min-h-[90vh] w-full overflow-y-auto">
+                  <DialogHeader>
+                    <DialogTitle>Are you absolutely sure?</DialogTitle>
+                    <DialogDescription>
+                      This action cannot be undone. This will permanently delete your account
+                      and remove your data from our servers.
+                    </DialogDescription>
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>
+            ))}
+          </div>
         </section>
 
         <section id='research' className='min-h-screen'>
           <h1 className='text-gray-600 leading-relaxed'>
             Research
           </h1>
+
+           <div className="flex flex-wrap justify-center gap-6">
+            {[...Array(2)].map((_, index) => (
+              <Dialog key={index}>
+                <DialogTrigger asChild>
+                  <Card className="w-[350px] border border-gray-300 shadow-lg bg-white cursor-pointer overflow-hidden p-0">
+                    <CardContent className="p-0">
+                      <img src={logo} alt="Project" className="w-full h-[200px] object-cover" />
+                      <div className="p-3">
+                        <p>Card Content</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </DialogTrigger>
+                <DialogContent className="min-w-[90vw] min-h-[90vh] w-full overflow-y-auto">
+                  <DialogHeader>
+                    <DialogTitle>Are you absolutely sure?</DialogTitle>
+                    <DialogDescription>
+                      This action cannot be undone. This will permanently delete your account
+                      and remove your data from our servers.
+                    </DialogDescription>
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>
+            ))}
+          </div>
         </section>
 
-        <section id='others' className='min-h-screen'>
+        <section id='others' className='w-full max-w-full md:max-w-7xl md:mx-auto mx-auto min-h-screen md:pt-[10hv]'>
           <h1 className='text-gray-600 leading-relaxed'>
             Others
           </h1>
+          <div className='flex'>
+            <div className='w-1/2 border-r border-gray-300 pr-4'>
+              <h2>
+                awards
+              </h2>
+            </div>
+
+            <div className='w-1/2 pl-4'>
+              <h2>
+                skills
+              </h2>
+            </div>
+          </div>
         </section>
       </main>
 
