@@ -3,6 +3,12 @@ import logo from './assets/logo.png'
 import githubIcon from './assets/githubMark.png'
 import projectData from './data/project.json'
 import researchData from './data/research.json'
+import trafficJamInfo from './assets/trafficJamInfo.png'
+import faceGraph from './assets/faceGraph.png'
+import tokyoMetro from './assets/tokyoMetro.png'
+import morphingEdgeDrawing from './assets/morphing_edge_drawing.png'
+import esportsDashboard from './assets/esports_dashboard.png'
+import decisionMaking from './assets/decision_making.png'
 import {
   Card,
   CardContent,
@@ -30,6 +36,18 @@ function App() {
     github: "https://github.com/TKmatsu2008",
     Wantedly: "https://www.wantedly.com/id/takamatsu_kazutaka",
     location: "茨城県 / リモートワーク可" // 任意
+  };
+
+  const projectImages: Record<string, string> = {
+    "navitime-intern": trafficJamInfo,
+    "tsukutopi-quiz": faceGraph,
+    "tokyo-metro-vis": tokyoMetro,
+  };
+
+  const researchImages: Record<string, string> = {
+    "network-graph-research": morphingEdgeDrawing,
+    "valorant-esports-dashboard": esportsDashboard,
+    "decision-making-visualization-research": decisionMaking,
   };
 
   return (
@@ -84,7 +102,7 @@ function App() {
                   <DialogTrigger asChild>
                     <Card className="w-[350px] border border-gray-300 shadow-lg bg-white cursor-pointer overflow-hidden p-0 transform hover:scale-105 transition-transform duration-300">
                       <CardContent className="p-0">
-                        <img src={project.image} alt={project.name} className="w-full h-[200px] object-cover" />
+                        <img src={projectImages[project.id]} alt={project.name} className="w-full h-[200px] object-cover" />
                         <div className="p-4">
                           <p className='font-semibold text-lg'>{project.name}</p>
                         </div>
@@ -99,7 +117,7 @@ function App() {
                     <div className="flex flex-col md:flex-row gap-8 mt-4">
                       <div className="w-full md:w-1/2 flex-shrink-0">
                         <img
-                          src={project.image}
+                          src={projectImages[project.id]}
                           alt={project.name}
                           className="w-full h-auto object-cover rounded-md border border-gray-200"
                         />
@@ -195,7 +213,7 @@ function App() {
                   <DialogTrigger asChild>
                     <Card className="w-[350px] border border-gray-300 shadow-lg bg-white cursor-pointer overflow-hidden p-0 transform hover:scale-105 transition-transform duration-300">
                       <CardContent className="p-0">
-                        <img src={research.image} alt={research.name} className="w-full h-[200px] object-cover" />
+                        <img src={researchImages[research.id]} alt={research.name} className="w-full h-[200px] object-cover" />
                         <div className="p-4">
                           <p className='font-semibold text-lg'>{research.name}</p>
                         </div>
@@ -209,7 +227,7 @@ function App() {
                     <div className="flex flex-col md:flex-row gap-8 mt-4">
                       <div className="w-full md:w-1/2 flex-shrink-0">
                         <img
-                          src={research.image}
+                          src={researchImages[research.id]}
                           alt={research.name}
                           className="w-full h-auto object-cover rounded-md border border-gray-200"
                         />
