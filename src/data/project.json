@@ -4,7 +4,7 @@
     "name": "NAVITIME「渋滞情報マップ」機能開発",
     "category": "アプリ開発 / 現場インターンシップ / チーム開発",
     "duration": "約2週間（2024年9月）",
-    "image": "src/assets/trafficJamInfo.png",
+    "image": "./assets/trafficJamInfo.png",
     "details": {
       "title": "NAVITIME「渋滞情報マップ」機能開発（現場配属インターン）",
       "summary": "現場配属インターンシップとして、現在運用中の大規模なiOSアプリに新機能の設計・開発・統合を担当。",
@@ -27,7 +27,7 @@
     "category": "Web開発 / 初のハッカソン参加作品 / チーム開発",
     "duration": "通年(2023年)",
     "github": "https://github.com/MiyamotoRin/FaceGraph-Flask",
-    "image": "src/assets/faceGraph.png",
+    "image": "./assets/faceGraph.png",
     "details": {
       "title": "Face Graph / AI Quizサーキュレーター（Web UI開発）",
       "summary": "Web開発の基礎学習を目的とした初期プロジェクト。主にHTMLとJavaScriptを用いたユーザーインターフェースの構築を担当。",
@@ -50,7 +50,7 @@
     "category": "データ可視化 / 学会コンテスト参加作品 / チーム開発",
     "duration": "2025年4~5月",
     "github": "https://github.com/TKmatsu2008/JapanVis2025Contest",
-    "image": "src/assets/tokyoMetro.png",
+    "image": "./assets/tokyoMetro.png",
     "details": {
       "title": "東京メトロ 移動リズムの可視化",
       "summary": "東京メトロ・都営地下鉄の移動時間、運行頻度、利用者数などのデータを、D3.jsを用いてインタラクティブなネットワーク図として可視化。",

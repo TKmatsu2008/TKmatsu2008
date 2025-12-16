@@ -4,7 +4,7 @@
   "name": "ネットワーク構造の可視化と分析支援",
   "category": "研究 / データ可視化 / Webアプリケーション",
   "duration": "通年（学部研究）",
-  "image": "src/assets/morphing_edge_drawing.png",
+  "image": "./assets/morphing_edge_drawing.png",
   "details": {
     "title": "ネットワーク図可視化による構造理解支援システム",
     "background_purpose": "社会ネットワークや情報ネットワークなどの複雑な関係構造は、数値や表形式だけでは把握が難しい。本研究では、ネットワーク構造を視覚的に表現することで、関係性や特徴を直感的に理解できる分析支援手法の検討を目的とした。",
@@ -23,7 +23,7 @@
   "name": "eSports観戦理解を支援するインタラクティブダッシュボード",
   "category": "研究 / Webアプリケーション / UX・データ可視化",
   "duration": "2024年〜現在",
-  "image": "src/assets/esports_dashboard.png",
+  "image": "./assets/esports_dashboard.png",
   "details": {
     "title": "Valorant観戦における試合理解を促進するWebダッシュボードの研究",
     "background_purpose": "eSports観戦では、マップ状況やプレイヤー行動、試合進行を同時に把握する必要があり、特に初心者にとって理解が難しい。本研究では、試合データを整理・可視化し、観戦者の試合理解を支援するインタラクティブなダッシュボードの構築を目的とした。",
@@ -42,7 +42,7 @@
   "name": "データ可視化による意思決定支援研究の包括的分類",
   "category": "研究 / データ可視化 / 意思決定支援 / 共同研究",
   "duration": "2024年9月〜2025年4月",
-  "image": "src/assets/decision_making.png",
+  "image": "./assets/decision_making.png",
   "details": {
     "title": "意思決定問題の特性に基づくデータ可視化研究の包括的分類",
     "background_purpose": "データ可視化は科学、ビジネス、医療など多様な分野で意思決定を支援してきたが、どの種類の意思決定問題に対してどの程度貢献してきたのかを体系的に整理した研究は十分ではなかった。本研究では、可視化研究が意思決定に果たしてきた役割を包括的に整理し、今後注力すべき研究領域を明らかにすることを目的とした。",
